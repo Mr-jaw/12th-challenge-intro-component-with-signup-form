@@ -29,6 +29,19 @@ function Validation ()  {
                 input_field.style.color = 'var(--dark-blue)'
                 emphasized_text.classList.add('hidden')
             }
+        } else if (i === 3) {
+            if (input_field.value.length < 8) {
+                emphasized_text.classList.remove('hidden')
+                emphasized_text.innerText = "Password must be atleast 8 characters long"
+                input_field.style.background = "url('/images/icon-error.svg') no-repeat right"
+                input_field.style.backgroundPositionX = '94%'
+                input_field.style.borderColor = 'var(--red)'
+            } else {
+                input_field.style.background = "none"
+                input_field.style.borderColor = "var(--grayish-blue)"
+                input_field.style.color = 'var(--dark-blue)'
+                emphasized_text.classList.add('hidden')
+            }
         } else {
             input_field.style.background = "none"
             input_field.style.borderColor = "var(--grayish-blue)"
