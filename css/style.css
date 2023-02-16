@@ -1,0 +1,167 @@
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: var(--poppins);
+    color: whitesmoke;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.6em;
+  padding-top: 5.5em;
+  background-color: var(--red);
+  background-image: url('/images/bg-intro-mobile.png');
+  background-repeat: no-repeat;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-section {
+  text-align: center;
+}
+
+.text-section h1 {
+  font-size: 1.7rem;
+  padding-bottom: .6em;
+}
+
+.form-section {
+  padding-top: 3.9em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+  
+}
+
+.form-section .offer {
+  background-color: var(--blue);
+  padding: 1.2em 2.5em;
+  border-radius: .6em;
+  text-align: center;
+  box-shadow: 0 .5em 0 rgba(0, 0, 0, .15);
+}
+
+.offer strong {
+  line-height: 1.6;
+  font-weight: lighter;
+}
+
+.offer strong b {
+  font-weight: 700;
+}
+
+.form-section .form{
+  background-color: white;
+  padding: 1.5em;
+  border-radius: .6em;
+  box-shadow: 0 .5em 0 rgba(0, 0, 0, .15);
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container em {
+  color: var(--red);
+  font-size: .7rem;
+  text-align: right;
+}
+
+.input-container em.active {
+  display: block;
+}
+
+.form-section form input {
+  padding: 1em;
+  font-size: .95rem;
+  font-family: var(--poppins);
+  width: 100%;
+  font-weight: 500;
+  border-radius: .3em;
+  border: .01em solid var(--grayish-blue); 
+}
+
+.form-section form .claim-btn {
+  padding: 1em;
+  font-size: .95rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  font-family: var(--poppins);
+  border: none;
+  font-weight: 500;
+  border-radius: .4em;
+  background-color: var(--green);
+  border-bottom: .3em solid hsl(154, 59%, 45%);
+  color: whitesmoke;
+}
+
+.form-section form .acknowledgement {
+  font-size: .7rem;
+  padding: 0 1.8em;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+.form-section form .terms {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--red);
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
