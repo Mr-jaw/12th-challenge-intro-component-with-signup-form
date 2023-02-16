@@ -76,12 +76,13 @@ footer {
   box-shadow: 0 .5em 0 rgba(0, 0, 0, .15);
 }
 
-.offer strong {
+.offer h2 {
   line-height: 1.6;
   font-weight: lighter;
+  font-size: 1rem;
 }
 
-.offer strong b {
+.offer h2 b {
   font-weight: 700;
 }
 
