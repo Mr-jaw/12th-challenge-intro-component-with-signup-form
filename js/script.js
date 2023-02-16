@@ -26,6 +26,7 @@ function Validation ()  {
             } else {
                 input_field.style.background = "none"
                 input_field.style.borderColor = "var(--grayish-blue)"
+                input_field.style.color = 'var(--dark-blue)'
                 emphasized_text.classList.add('hidden')
             }
         } else {
