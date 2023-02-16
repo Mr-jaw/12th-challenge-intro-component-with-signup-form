@@ -11,9 +11,13 @@ function Validation ()  {
             input_field.style.backgroundPositionX = '94%'
             input_field.style.borderColor = 'var(--red)'
             emphasized_text.classList.remove('hidden')
+            if (i === 2) {
+                emphasized_text.innerText = "Email cannot be empty"
+            }
         } else if (i === 2) {
             if (!input_field.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
                 emphasized_text.classList.remove('hidden')
+                emphasized_text.innerText = "Looks like this not an email"
                 input_field.style.background = "url('/images/icon-error.svg') no-repeat right"
                 input_field.style.backgroundPositionX = '94%'
                 input_field.style.borderColor = 'var(--red)'

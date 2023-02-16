@@ -32,8 +32,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 1.6em;
-  padding-top: 5.5em;
+  padding:5.5em 1.6em 4.5em 1.6em;
   background-color: var(--red);
   background-image: url('/images/bg-intro-mobile.png');
   background-repeat: no-repeat;
@@ -41,7 +40,10 @@ body {
 
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: .1em;
+  background-color: var(--blue);
+  padding: .1em .5em;
+  border-radius: 1em;
 }
 
 .hidden {
@@ -55,6 +57,7 @@ footer {
 .text-section h1 {
   font-size: 1.7rem;
   padding-bottom: .6em;
+  transition: .5s;
 }
 
 .form-section {
@@ -118,7 +121,8 @@ footer {
   width: 100%;
   font-weight: 500;
   border-radius: .3em;
-  border: .01em solid var(--grayish-blue); 
+  border: .01em solid var(--grayish-blue);
+  transition: .5s;
 }
 
 .form-section form .claim-btn {
@@ -132,7 +136,16 @@ footer {
   border-radius: .4em;
   background-color: var(--green);
   border-bottom: .3em solid hsl(154, 59%, 45%);
+  transition: .5s;
   color: whitesmoke;
+}
+
+.form-section form .claim-btn:hover {
+  background-color: hsl(154, 59%, 48%);
+}
+
+.form-section form .claim-btn:focus {
+  border-bottom: .3em solid hsl(154, 59%, 48%);
 }
 
 .form-section form .acknowledgement {
@@ -159,9 +172,9 @@ footer {
 
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--green);
 }
