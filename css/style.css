@@ -115,7 +115,7 @@ footer {
 }
 
 .form-section form input {
-  padding: 1em;
+  padding: 1.3em 2em;
   font-size: .95rem;
   font-family: var(--poppins);
   width: 100%;
@@ -123,6 +123,14 @@ footer {
   border-radius: .3em;
   border: .01em solid var(--grayish-blue);
   transition: .5s;
+}
+
+.form-section form input::placeholder {
+  color: var(--dark-blue);
+}
+
+.form-section form input:focus {
+  border-color: var(--dark-blue);
 }
 
 .form-section form .claim-btn {
