@@ -15,6 +15,11 @@ function Validation ()  {
                 emphasized_text.innerText = "Email cannot be empty"
                 input_field.style.color = 'var(--dark-blue)'
             }
+
+            if (i === 3){
+                emphasized_text.innerText = "Password canot be empty"
+            }
+
         } else if (i === 2) {
             if (!input_field.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
                 emphasized_text.classList.remove('hidden')
