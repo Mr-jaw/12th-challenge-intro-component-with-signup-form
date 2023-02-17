@@ -25,22 +25,22 @@
       <div class="form">
         <form id="form"  name="signupForm" method="post">
           <div class="input-container">
-            <input type="text" id="fname" name="firstname" placeholder="First Name" aria-label="First Name" required aria-required="true">
-            <em class="hidden">First name cannot be empty</em>
+            <input type="text" id="fname" name="firstname" placeholder="First Name" aria-label="First Name" aria-describedby="fist-name-error" required >
+            <em hidden id="fist-name-error" aria-live="polite"></em>
           </div>
           <div class="input-container">
-            <input type="text" id="lname" name="lastname" placeholder="Last Name" aria-label="Last Name" required aria-required="true">
-            <em class="hidden">Last name cannot be empty</em>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name" aria-label="Last Name" aria-describedby="last-name-error" required >
+            <em hidden id="last-name-error" aria-live="polite"></em>
           </div>
           <div class="input-container">
-            <input type="email" id="emailfield" name="email" placeholder="Email Address" aria-label="Email Address" required aria-required="true">
-            <em class="hidden">Email cannot be empty</em>
+            <input type="email" id="emailfield" name="email" placeholder="Email Address" aria-label="Email Address" aria-describedby="email-error" required >
+            <em hidden id="email-error" aria-live="polite"></em>
           </div>
           <div class="input-container">
-            <input type="password" id="passwordfield" name="password" placeholder="Password" aria-label="Password" required aria-required="true">
-            <em class="hidden">Password cannot be empty</em>
+            <input type="password" id="passwordfield" name="password" placeholder="Password" aria-label="Password" aria-describedby="password-error" required >
+            <em hidden id="password-error" aria-live="polite"></em>
           </div>
-          <input type="submit" class="claim-btn" aria-label="Submit" value="Claim your free trial" onclick="Validation()">
+          <button type="submit" class="claim-btn" aria-label="Claim your free trial" onclick="Validation()">Claim your free trial</button>
           <p class="acknowledgement">By clicking the button, you are agreeing to our <a href="" class="terms">Terms and Services</a></p>
         </form>
       </div>
